@@ -1788,6 +1788,13 @@ tile_set = SubResource("TileSet_mjudt")
 position = Vector2(120, 142)
 scale = Vector2(0.597381, 0.591514)
 
+[node name="Button" type="Button" parent="Area2D"]
+offset_left = -10.029539
+offset_top = -10.109564
+offset_right = 9.979006
+offset_bottom = 11.900278
+flat = true
+
 [node name="Area2D2" parent="." instance=ExtResource("3_dxec3")]
 position = Vector2(168, 83.5146)
 scale = Vector2(0.698519, 1.15839)
