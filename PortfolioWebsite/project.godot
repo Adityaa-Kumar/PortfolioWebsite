@@ -23,6 +23,10 @@ window/size/window_width_override=640
 window/size/window_height_override=640
 window/stretch/mode="canvas_items"
 
+[global_group]
+
+Interaction=""
+
 [input]
 
 ui_left={

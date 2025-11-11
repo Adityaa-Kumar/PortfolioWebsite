@@ -5,6 +5,7 @@ extends CharacterBody2D
 @export var friction: float = 10.0
 @onready var tile_map_layer_1: TileMapLayer = $"../TileMapLayer1"
 @onready var tile_map_layer_2: TileMapLayer = $"../TileMapLayer2"
+@onready var interactible: Sprite2D = $Interactible
 
 var input_vector: Vector2
 var astar_grid: AStarGrid2D
@@ -105,13 +106,13 @@ func _physics_process(delta):
 func handle_input():
 	input_vector = Vector2.ZERO
 
-	if Input.is_action_pressed("ui_up") or Input.is_action_pressed("move_up"):
+	if Input.is_action_pressed("ui_up"):
 		input_vector.y -= 1
-	if Input.is_action_pressed("ui_down") or Input.is_action_pressed("move_down"):
+	if Input.is_action_pressed("ui_down"):
 		input_vector.y += 1
-	if Input.is_action_pressed("ui_left") or Input.is_action_pressed("move_left"):
+	if Input.is_action_pressed("ui_left"):
 		input_vector.x -= 1
-	if Input.is_action_pressed("ui_right") or Input.is_action_pressed("move_right"):
+	if Input.is_action_pressed("ui_right"):
 		input_vector.x += 1
 
 	input_vector = input_vector.normalized()
@@ -201,3 +202,12 @@ func get_movement_state() -> String:
 
 func get_facing_direction() -> Vector2:
 	return velocity.normalized() if velocity.length() > 10 else last_facing_dir
+
+
+func _on_area_2d_area_entered(area: Area2D) -> void:
+	if area.is_in_group("Interaction"):
+		interactible.visible = true
+
+func _on_area_2d_area_exited(area: Area2D) -> void:
+	if area.is_in_group("Interaction"):
+		interactible.visible = false
