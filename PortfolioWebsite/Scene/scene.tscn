@@ -1,8 +1,9 @@
-[gd_scene load_steps=8 format=4 uid="uid://cwlov4s806g0e"]
+[gd_scene load_steps=9 format=4 uid="uid://cwlov4s806g0e"]
 
 [ext_resource type="Texture2D" uid="uid://dpxowysq12ok" path="res://Assets/spritesheet.png" id="1_yjfpt"]
 [ext_resource type="PackedScene" uid="uid://ccellp4xe18y2" path="res://Scene/character.tscn" id="2_i0f4b"]
 [ext_resource type="PackedScene" uid="uid://c8emh7k6870hl" path="res://Scene/interactible.tscn" id="3_dxec3"]
+[ext_resource type="Script" uid="uid://uktdn8kb5oem" path="res://Scripts/interactible.gd" id="4_x02iy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i0f4b"]
 texture = ExtResource("1_yjfpt")
@@ -1812,6 +1813,7 @@ position = Vector2(120.25478, 152.5952)
 scale = Vector2(0.8059879, 0.789546)
 collision_layer = 2
 collision_mask = 2
+script = ExtResource("4_x02iy")
 
 [node name="Area2D7" parent="." groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(166.37689, 84.72081)
@@ -1842,8 +1844,3 @@ position = Vector2(279.53992, 77.91087)
 scale = Vector2(0.7599605, 1.5971333)
 collision_layer = 2
 collision_mask = 2
-
-[node name="Node2D" type="Node2D" parent="."]
-
-[node name="TouchScreenButton" type="TouchScreenButton" parent="."]
-action = "move"

@@ -14,6 +14,10 @@ func _ready():
 	interactible.visible = false
 
 func _physics_process(delta):
+	# STOP moving if dialogue is active
+	if DialogueManager.is_dialogue_active:
+		return 
+
 	handle_input()
 
 	if input_vector.length() > 0:
@@ -25,6 +29,10 @@ func _physics_process(delta):
 	update_animation()
 
 func _unhandled_input(event):
+	# Don't interact again if we are already reading
+	if DialogueManager.is_dialogue_active:
+		return
+
 	if event.is_action_pressed("ui_accept"):
 		attempt_interaction()
 
