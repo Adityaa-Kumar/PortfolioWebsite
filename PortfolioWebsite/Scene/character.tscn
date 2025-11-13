@@ -1,8 +1,13 @@
-[gd_scene load_steps=26 format=3 uid="uid://ccellp4xe18y2"]
+[gd_scene load_steps=31 format=3 uid="uid://ccellp4xe18y2"]
 
 [ext_resource type="Script" uid="uid://cb185lyps1n0j" path="res://Scripts/character.gd" id="1_b6o27"]
 [ext_resource type="Texture2D" uid="uid://q0cbrw7seuj6" path="res://Assets/Sprite-0001.png" id="1_snjih"]
-[ext_resource type="Texture2D" uid="uid://d348ev2xdpr2w" path="res://Assets/UI_TravelBook_Spritesheet01a.png" id="3_tgux0"]
+[ext_resource type="Texture2D" uid="uid://bwreq3mtq12h1" path="res://Assets/Interactible.png" id="3_bosnt"]
+[ext_resource type="Texture2D" uid="uid://b03giu8m8vp23" path="res://Assets/upt.png" id="4_46cb6"]
+[ext_resource type="Texture2D" uid="uid://f18iqhy2rn6p" path="res://Assets/right.png" id="5_bosnt"]
+[ext_resource type="Texture2D" uid="uid://cffhcbbvycuaq" path="res://Assets/Interact.png" id="6_b1jne"]
+[ext_resource type="Texture2D" uid="uid://dkse08mx1ikrv" path="res://Assets/left.png" id="7_oncsw"]
+[ext_resource type="Texture2D" uid="uid://j7qcqnfft376" path="res://Assets/down.png" id="8_cp0d1"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b6o27"]
 atlas = ExtResource("1_snjih")
@@ -208,10 +213,47 @@ scale = Vector2(-5.28, -2.24)
 [node name="Interactible" type="Sprite2D" parent="."]
 visible = false
 z_index = 1
-position = Vector2(0, -13)
-texture = ExtResource("3_tgux0")
+position = Vector2(-1.7763568e-14, -15)
+rotation = 1.5707964
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("3_bosnt")
 region_enabled = true
-region_rect = Rect2(116, 756, 8, 8)
+region_rect = Rect2(0, 0, 17, 14)
+
+[node name="Up_Btn" type="TouchScreenButton" parent="."]
+z_index = 10
+position = Vector2(-56.000004, 37)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("4_46cb6")
+action = "ui_up"
+
+[node name="Right_Btn2" type="TouchScreenButton" parent="."]
+z_index = 10
+position = Vector2(-38, 48)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("5_bosnt")
+action = "ui_right"
+
+[node name="Interact_Btn3" type="TouchScreenButton" parent="."]
+z_index = 10
+position = Vector2(45, 48)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("6_b1jne")
+action = "ui_accept"
+
+[node name="Left_Btn3" type="TouchScreenButton" parent="."]
+z_index = 10
+position = Vector2(-74, 48)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("7_oncsw")
+action = "ui_left"
+
+[node name="Down_Btn4" type="TouchScreenButton" parent="."]
+z_index = 10
+position = Vector2(-56.000004, 60)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("8_cp0d1")
+action = "ui_down"
 
 [node name="Area2D" type="Area2D" parent="."]
 collision_layer = 2
