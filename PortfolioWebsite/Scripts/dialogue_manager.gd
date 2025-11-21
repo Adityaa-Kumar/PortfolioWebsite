@@ -1,7 +1,7 @@
-extends CanvasLayer
+extends Control
 
-@onready var text_label: RichTextLabel = $Panel/RichTextLabel
-@onready var textbox: Panel = $Panel
+@onready var text_label: RichTextLabel = $CanvasLayer/Panel/RichTextLabel
+@onready var textbox: Panel = $CanvasLayer/Panel
 
 @export var text_speed: float = 0.05 
 
@@ -11,7 +11,7 @@ var is_dialogue_active: bool = false
 var current_tween: Tween = null
 
 func _ready():
-	visible = false
+	textbox.hide()
 
 func start_dialogue(lines: Array[String]):
 	if is_dialogue_active:
@@ -20,7 +20,7 @@ func start_dialogue(lines: Array[String]):
 	dialogue_lines = lines
 	current_line_index = 0
 	is_dialogue_active = true
-	visible = true
+	textbox.show()
 	
 	show_text()
 
@@ -59,7 +59,7 @@ func advance_dialogue():
 	
 	if current_line_index >= dialogue_lines.size():
 		is_dialogue_active = false
-		visible = false
+		textbox.hide()
 		return
 	
 	show_text()

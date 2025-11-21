@@ -1784,62 +1784,64 @@ position = Vector2(200.3881, 126.47346)
 tile_map_data = PackedByteArray("AAAOAAQAAAAiAAgAAAARAAQAAAAlAAgAAAAGAAYAAAAfAAUAAAAGAAcAAAAeAAYAAAAHAAYAAAAgAAUAAAAHAAcAAAAfAAYAAAAHAAgAAAAiAAMAAAAHAAkAAAAiAAQAAAAKAAQAAAAhAAUAAAAKAAUAAAAhAAYAAAAOAAUAAAAiAAkAAAAPAAQAAAAjAAgAAAAPAAUAAAAjAAkAAAARAAUAAAAlAAkAAAATAAUAAAAcAAQAAAAUAAUAAAAfAAQAAAA=")
 tile_set = SubResource("TileSet_mjudt")
 
-[node name="Area2D" parent="." instance=ExtResource("3_dxec3")]
+[node name="Objects" type="Node2D" parent="."]
+
+[node name="Area2D" parent="Objects" instance=ExtResource("3_dxec3")]
 position = Vector2(119.70547, 141.91087)
 scale = Vector2(0.597381, 0.591514)
 
-[node name="Area2D2" parent="." instance=ExtResource("3_dxec3")]
+[node name="Area2D2" parent="Objects" instance=ExtResource("3_dxec3")]
 position = Vector2(166.37689, 84.72081)
 scale = Vector2(0.698519, 1.15839)
 
-[node name="Area2D3" parent="." instance=ExtResource("3_dxec3")]
+[node name="Area2D3" parent="Objects" instance=ExtResource("3_dxec3")]
 position = Vector2(311.5906, 87.81386)
 scale = Vector2(0.720005, 0.719995)
 
-[node name="Area2D12" parent="." instance=ExtResource("3_dxec3")]
+[node name="Area2D12" parent="Objects" instance=ExtResource("3_dxec3")]
 position = Vector2(327.4974, 87.81385)
 scale = Vector2(0.720005, 0.879995)
 
-[node name="Area2D4" parent="." instance=ExtResource("3_dxec3")]
+[node name="Area2D4" parent="Objects" instance=ExtResource("3_dxec3")]
 position = Vector2(239.37442, 87.0764)
 scale = Vector2(1.48, 0.799993)
 
-[node name="Area2D5" parent="." instance=ExtResource("3_dxec3")]
+[node name="Area2D5" parent="Objects" instance=ExtResource("3_dxec3")]
 position = Vector2(279.87097, 78.40744)
 scale = Vector2(0.59998, 1.2)
 
-[node name="Area2D6" parent="." groups=["Interaction"] instance=ExtResource("3_dxec3")]
+[node name="Area2D6" parent="Objects" groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(120.25478, 152.5952)
 scale = Vector2(0.8059879, 0.789546)
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("4_x02iy")
 
-[node name="Area2D7" parent="." groups=["Interaction"] instance=ExtResource("3_dxec3")]
+[node name="Area2D7" parent="Objects" groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(166.37689, 84.72081)
 scale = Vector2(0.9116183, 1.6153771)
 collision_layer = 2
 collision_mask = 2
 
-[node name="Area2D8" parent="." groups=["Interaction"] instance=ExtResource("3_dxec3")]
+[node name="Area2D8" parent="Objects" groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(310.80145, 87.0518)
 scale = Vector2(0.8745472, 0.92066604)
 collision_layer = 2
 collision_mask = 2
 
-[node name="Area2D11" parent="." groups=["Interaction"] instance=ExtResource("3_dxec3")]
+[node name="Area2D11" parent="Objects" groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(327.8665, 87.283455)
 scale = Vector2(0.7945374, 1.1206685)
 collision_layer = 2
 collision_mask = 2
 
-[node name="Area2D9" parent="." groups=["Interaction"] instance=ExtResource("3_dxec3")]
+[node name="Area2D9" parent="Objects" groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(241.52621, 87.24192)
 scale = Vector2(1.8026118, 1.0238404)
 collision_layer = 2
 collision_mask = 2
 
-[node name="Area2D10" parent="." groups=["Interaction"] instance=ExtResource("3_dxec3")]
+[node name="Area2D10" parent="Objects" groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(279.53992, 77.91087)
 scale = Vector2(0.7599605, 1.5971333)
 collision_layer = 2
