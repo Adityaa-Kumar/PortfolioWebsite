@@ -17,7 +17,7 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-DialogueManager="*res://Scene/UIManager.tscn"
+DialogueManager="*res://Scenes/UIManager.tscn"
 
 [display]
 
@@ -31,7 +31,7 @@ window/stretch/mode="canvas_items"
 
 folder_colors={
 "res://Assets/": "red",
-"res://Scene/": "green",
+"res://Scenes/": "green",
 "res://Scripts/": "blue"
 }
 

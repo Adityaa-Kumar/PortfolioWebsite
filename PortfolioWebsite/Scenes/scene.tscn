@@ -1,8 +1,8 @@
 [gd_scene load_steps=9 format=4 uid="uid://cwlov4s806g0e"]
 
 [ext_resource type="Texture2D" uid="uid://dpxowysq12ok" path="res://Assets/spritesheet.png" id="1_yjfpt"]
-[ext_resource type="PackedScene" uid="uid://ccellp4xe18y2" path="res://Scene/character.tscn" id="2_i0f4b"]
-[ext_resource type="PackedScene" uid="uid://c8emh7k6870hl" path="res://Scene/interactible.tscn" id="3_dxec3"]
+[ext_resource type="PackedScene" uid="uid://ccellp4xe18y2" path="res://Scenes/character.tscn" id="2_i0f4b"]
+[ext_resource type="PackedScene" uid="uid://c8emh7k6870hl" path="res://Scenes/interactible.tscn" id="3_dxec3"]
 [ext_resource type="Script" uid="uid://uktdn8kb5oem" path="res://Scripts/interactible.gd" id="4_x02iy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i0f4b"]
