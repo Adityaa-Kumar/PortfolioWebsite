@@ -1811,11 +1811,12 @@ position = Vector2(279.87097, 78.40744)
 scale = Vector2(0.59998, 1.2)
 
 [node name="Area2D6" parent="Objects" groups=["Interaction"] instance=ExtResource("3_dxec3")]
-position = Vector2(120.25478, 152.5952)
+position = Vector2(120.00001, 153)
 scale = Vector2(0.8059879, 0.789546)
 collision_layer = 2
 collision_mask = 2
 script = ExtResource("4_x02iy")
+lines = Array[String](["Follow this [url=https://google.com]link[/url].", "[center][img=200x150]res://Assets/Images/3d-car.png[/img][/center]\\n\\n[b][color=yellow]**Tread & Lead ★**[/color][/b]2.5D Mad Max racer → FPS Last Stand\\nMetal currency + save/load systems\\n3-person team (programming lead)url=https://adityaa-kumarr.itch.io/tread-lead][color=cyan]itch.io →[/color][/url]"])
 
 [node name="Area2D7" parent="Objects" groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(166.37689, 84.72081)
