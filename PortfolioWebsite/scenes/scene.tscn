@@ -3,7 +3,7 @@
 [ext_resource type="Texture2D" uid="uid://dpxowysq12ok" path="res://assets/spritesheet.png" id="1_yjfpt"]
 [ext_resource type="PackedScene" uid="uid://ccellp4xe18y2" path="res://scenes/character.tscn" id="2_i0f4b"]
 [ext_resource type="PackedScene" uid="uid://c8emh7k6870hl" path="res://scenes/interactible.tscn" id="3_dxec3"]
-[ext_resource type="Script" uid="uid://uktdn8kb5oem" path="res://scripts/interactible.gd" id="4_x02iy"]
+[ext_resource type="Script" uid="uid://uktdn8kb5oem" path="res://scripts/resume.gd" id="4_x02iy"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_i0f4b"]
 texture = ExtResource("1_yjfpt")
@@ -234,10 +234,13 @@ texture = ExtResource("1_yjfpt")
 23:7/0 = 0
 24:7/0 = 0
 28:7/0 = 0
+28:7/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 28:7/0/custom_data_0 = true
 29:7/0 = 0
+29:7/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 29:7/0/custom_data_0 = true
 30:7/0 = 0
+30:7/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 30:7/0/custom_data_0 = true
 0:8/0 = 0
 1:8/0 = 0
@@ -260,10 +263,13 @@ texture = ExtResource("1_yjfpt")
 23:8/0 = 0
 24:8/0 = 0
 28:8/0 = 0
+28:8/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 28:8/0/custom_data_0 = true
 29:8/0 = 0
+29:8/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 29:8/0/custom_data_0 = true
 30:8/0 = 0
+30:8/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 30:8/0/custom_data_0 = true
 34:8/0 = 0
 35:8/0 = 0
@@ -286,10 +292,13 @@ texture = ExtResource("1_yjfpt")
 17:9/0 = 0
 18:9/0 = 0
 28:9/0 = 0
+28:9/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 28:9/0/custom_data_0 = true
 29:9/0 = 0
+29:9/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 29:9/0/custom_data_0 = true
 30:9/0 = 0
+30:9/0/modulate = Color(0.6255971, 0.6255971, 0.62559694, 1)
 30:9/0/custom_data_0 = true
 34:9/0 = 0
 35:9/0 = 0
@@ -1815,8 +1824,6 @@ position = Vector2(120.00001, 153)
 scale = Vector2(0.8059879, 0.789546)
 collision_layer = 2
 collision_mask = 2
-script = ExtResource("4_x02iy")
-lines = Array[String](["Follow this [url=https://google.com]link[/url].", "[center][img=200x150]res://Assets/Images/3d-car.png[/img][/center]\\n\\n[b][color=yellow]**Tread & Lead ★**[/color][/b]2.5D Mad Max racer → FPS Last Stand\\nMetal currency + save/load systems\\n3-person team (programming lead)url=https://adityaa-kumarr.itch.io/tread-lead][color=cyan]itch.io →[/color][/url]"])
 
 [node name="Area2D7" parent="Objects" unique_id=965890044 groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(166.37689, 84.72081)
@@ -1841,6 +1848,7 @@ position = Vector2(241.52621, 87.24192)
 scale = Vector2(1.8026118, 1.0238404)
 collision_layer = 2
 collision_mask = 2
+script = ExtResource("4_x02iy")
 
 [node name="Area2D10" parent="Objects" unique_id=1987890732 groups=["Interaction"] instance=ExtResource("3_dxec3")]
 position = Vector2(279.53992, 77.91087)

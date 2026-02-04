@@ -1,6 +1,5 @@
 [gd_scene format=3 uid="uid://3h8blvgd2ok1"]
 
-[ext_resource type="Script" uid="uid://b2cs2wgn5miim" path="res://scripts/dialogue_manager.gd" id="1_gdx5x"]
 [ext_resource type="Texture2D" uid="uid://b03giu8m8vp23" path="res://assets/upt.png" id="2_0jfsd"]
 [ext_resource type="Texture2D" uid="uid://f18iqhy2rn6p" path="res://assets/right.png" id="3_xyx7x"]
 [ext_resource type="Texture2D" uid="uid://dkse08mx1ikrv" path="res://assets/left.png" id="4_ldkns"]
@@ -34,8 +33,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-script = ExtResource("1_gdx5x")
-text_speed = 0.002
 
 [node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1695611466]
 

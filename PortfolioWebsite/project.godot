@@ -15,13 +15,13 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 [application]
 
 config/name="Portfolio Website"
-run/main_scene="uid://cwlov4s806g0e"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
 DialogueManager="*uid://c3rodes2l3gxb"
+Global="*uid://lokx4nvrof2f"
 
 [dialogic]
 
@@ -124,6 +124,10 @@ dialogic_default_action={
 
 pointing/android/enable_pan_and_scale_gestures=true
 pointing/emulate_touch_from_mouse=true
+
+[internationalization]
+
+locale/translations_pot_files=PackedStringArray("res://dialogues/resume.dialogue")
 
 [rendering]
 

@@ -3,6 +3,7 @@
 [ext_resource type="Script" uid="uid://cb185lyps1n0j" path="res://scripts/character.gd" id="1_b6o27"]
 [ext_resource type="Texture2D" uid="uid://q0cbrw7seuj6" path="res://assets/Sprite-0001.png" id="1_snjih"]
 [ext_resource type="Texture2D" uid="uid://bwreq3mtq12h1" path="res://assets/Interactible.png" id="3_bosnt"]
+[ext_resource type="PackedScene" uid="uid://3h8blvgd2ok1" path="res://scenes/UIManager.tscn" id="3_my7n2"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_b6o27"]
 atlas = ExtResource("1_snjih")
@@ -204,6 +205,8 @@ shape = SubResource("CapsuleShape2D_cmtgg")
 
 [node name="Camera2D" type="Camera2D" parent="." unique_id=592117630]
 scale = Vector2(-5.28, -2.24)
+
+[node name="UiManager" parent="Camera2D" unique_id=1768849280 instance=ExtResource("3_my7n2")]
 
 [node name="Interactible" type="Sprite2D" parent="." unique_id=918601586]
 visible = false

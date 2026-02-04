@@ -1,11 +1,8 @@
 ~ start
-Nathan: [[Hi|Hello|Howdy]], this is some dialogue.
-Nathan: Here are some choices.
-- First one
-	Nathan: You picked the first one.
-- Second one
-	Nathan: You picked the second one.
-- Start again => start
-- End the conversation => END
-Nathan: For more information see the online documentation.
+Would you like to see my resume?
+- Go to resume
+	do Global.open_url("https://drive.google.com/file/d/1zvv_Jk1aaRB4voyoSFUWAwpYMpH6U4_E/view?usp=sharing")
+	Opening it in your browser now!
+- Go back
+	No problem. Let me know if you change your mind!
 => END
