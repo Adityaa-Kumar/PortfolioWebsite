@@ -21,12 +21,13 @@ config/icon="res://icon.svg"
 
 [autoload]
 
-DialogueManager="*res://scenes/UIManager.tscn"
-Dialogic="*uid://ds2q0uclmolvu"
+DialogueManager="*uid://c3rodes2l3gxb"
 
 [dialogic]
 
-directories/dch_directory={}
+directories/dch_directory={
+"resume": "res://characters/resume.dch"
+}
 directories/dtl_directory={}
 layout/style_directory={}
 
@@ -40,15 +41,16 @@ window/stretch/mode="canvas_items"
 
 [editor_plugins]
 
-enabled=PackedStringArray("res://addons/dialogic/plugin.cfg")
+enabled=PackedStringArray("res://addons/dialogue_manager/plugin.cfg")
 
 [file_customization]
 
 folder_colors={
 "res://addons/": "red",
 "res://assets/": "yellow",
-"res://scenes/": "green",
-"res://scripts/": "purple"
+"res://dialogues/": "green",
+"res://scenes/": "purple",
+"res://scripts/": "pink"
 }
 
 [global_group]
