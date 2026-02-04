@@ -1,0 +1,158 @@
+[gd_scene format=3 uid="uid://3h8blvgd2ok1"]
+
+[ext_resource type="Script" uid="uid://b2cs2wgn5miim" path="res://scripts/dialogue_manager.gd" id="1_gdx5x"]
+[ext_resource type="Texture2D" uid="uid://b03giu8m8vp23" path="res://assets/upt.png" id="2_0jfsd"]
+[ext_resource type="Texture2D" uid="uid://f18iqhy2rn6p" path="res://assets/right.png" id="3_xyx7x"]
+[ext_resource type="Texture2D" uid="uid://dkse08mx1ikrv" path="res://assets/left.png" id="4_ldkns"]
+[ext_resource type="Texture2D" uid="uid://j7qcqnfft376" path="res://assets/down.png" id="5_6fbpb"]
+[ext_resource type="Texture2D" uid="uid://cffhcbbvycuaq" path="res://assets/Interact.png" id="6_uvlts"]
+
+[sub_resource type="Theme" id="Theme_witq5"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_rdqnu"]
+bg_color = Color(0, 0, 0, 1)
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h1m5p"]
+content_margin_left = 0.0
+content_margin_top = 0.0
+content_margin_right = 0.0
+content_margin_bottom = 0.0
+bg_color = Color(0.7411765, 0.49411765, 0.76862746, 0)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+corner_detail = 5
+
+[sub_resource type="Theme" id="Theme_tk6py"]
+Panel/styles/panel = SubResource("StyleBoxFlat_h1m5p")
+
+[node name="UiManager" type="Control" unique_id=1768849280]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_gdx5x")
+text_speed = 0.002
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1695611466]
+
+[node name="Panel" type="Panel" parent="CanvasLayer" unique_id=1739845749]
+visible = false
+anchors_preset = -1
+anchor_top = 0.72400004
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.03025055
+grow_horizontal = 2
+grow_vertical = 0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="CanvasLayer/Panel" unique_id=751691818]
+z_index = 11
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = SubResource("Theme_witq5")
+theme_override_styles/normal = SubResource("StyleBoxFlat_rdqnu")
+bbcode_enabled = true
+
+[node name="Up_Btn" type="TouchScreenButton" parent="CanvasLayer/Panel" unique_id=1187228601]
+light_mask = 16
+visibility_layer = 18
+z_index = 10
+position = Vector2(23.83273, 2.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("2_0jfsd")
+action = "ui_up"
+
+[node name="Right_Btn2" type="TouchScreenButton" parent="CanvasLayer/Panel" unique_id=1399424174]
+light_mask = 16
+visibility_layer = 18
+z_index = 10
+position = Vector2(41.832733, 13.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("3_xyx7x")
+action = "ui_right"
+
+[node name="Left_Btn3" type="TouchScreenButton" parent="CanvasLayer/Panel" unique_id=1442803859]
+light_mask = 16
+visibility_layer = 18
+z_index = 10
+position = Vector2(5.832733, 13.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("4_ldkns")
+action = "ui_left"
+
+[node name="Down_Btn4" type="TouchScreenButton" parent="CanvasLayer/Panel" unique_id=1591246014]
+light_mask = 16
+visibility_layer = 18
+z_index = 10
+position = Vector2(23.83273, 25.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("5_6fbpb")
+action = "ui_down"
+
+[node name="Interact_Btn5" type="TouchScreenButton" parent="CanvasLayer/Panel" unique_id=934180574]
+z_index = 15
+position = Vector2(124.83273, 13.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("6_uvlts")
+action = "ui_accept"
+
+[node name="Controls" type="Panel" parent="CanvasLayer" unique_id=1634645856]
+anchors_preset = -1
+anchor_top = 0.72400004
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_top = -0.03025055
+grow_horizontal = 2
+grow_vertical = 0
+theme = SubResource("Theme_tk6py")
+
+[node name="Up_Btn" type="TouchScreenButton" parent="CanvasLayer/Controls" unique_id=1564268689]
+light_mask = 16
+visibility_layer = 18
+z_index = 10
+position = Vector2(23.83273, 2.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("2_0jfsd")
+action = "ui_up"
+
+[node name="Right_Btn2" type="TouchScreenButton" parent="CanvasLayer/Controls" unique_id=1732871851]
+light_mask = 16
+visibility_layer = 18
+z_index = 10
+position = Vector2(41.832733, 13.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("3_xyx7x")
+action = "ui_right"
+
+[node name="Left_Btn3" type="TouchScreenButton" parent="CanvasLayer/Controls" unique_id=568304283]
+light_mask = 16
+visibility_layer = 18
+z_index = 10
+position = Vector2(5.832733, 13.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("4_ldkns")
+action = "ui_left"
+
+[node name="Down_Btn4" type="TouchScreenButton" parent="CanvasLayer/Controls" unique_id=1330156326]
+light_mask = 16
+visibility_layer = 18
+z_index = 10
+position = Vector2(23.83273, 25.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("5_6fbpb")
+action = "ui_down"
+
+[node name="Interact_Btn4" type="TouchScreenButton" parent="CanvasLayer/Controls" unique_id=1691384753]
+z_index = 15
+position = Vector2(124.83273, 13.228424)
+scale = Vector2(2, 2)
+texture_normal = ExtResource("6_uvlts")
+action = "ui_accept"
